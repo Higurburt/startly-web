@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Startly</title>
+    <script type="text/javascript">
+      // SPA GitHub Pages 404 fallback.
+      // When someone hits a direct link like /startly-web/site/<encoded>,
+      // GitHub Pages serves this 404.html. We rewrite the URL into a form
+      // index.html can read: /startly-web/?/site/<encoded>&... — then redirect.
+      // index.html's inline script decodes it back and pushState's the real path.
+      (function (l) {
+        var pathSegmentsToKeep = 1; // keep "/startly-web"
+        var newPath =
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+          '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+        l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + newPath);
+      })(window.location);
+    </script>
+  </head>
+  <body></body>
+</html>
