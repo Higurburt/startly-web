@@ -1,0 +1,21 @@
+{
+  "name": "Startly — Make your first sale",
+  "short_name": "Startly",
+  "description": "Startly helps young entrepreneurs go from idea to first sale with an AI mentor, daily tasks, and a money tracker.",
+  "start_url": "/startly-web/",
+  "scope": "/startly-web/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0E0B1F",
+  "theme_color": "#0E0B1F",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/startly-web/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "education"]
+}

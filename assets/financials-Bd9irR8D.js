@@ -1,0 +1,1 @@
+function r(t){return t.filter(e=>e.type==="income").reduce((e,n)=>e+(parseFloat(n.amount)||0),0)}function u(t){return t.filter(e=>e.type==="expense").reduce((e,n)=>e+(parseFloat(n.amount)||0),0)}function o(t){return r(t)-u(t)}function a(t){const e=r(t);return e===0?0:o(t)/e}export{u as a,o as n,a as p,r as t};
