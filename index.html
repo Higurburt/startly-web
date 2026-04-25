@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <!-- Content Security Policy — meta fallback. Prefer HTTP headers in prod. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://us.i.posthog.com https://us-assets.i.posthog.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://startly-backend-production.up.railway.app https://us.i.posthog.com https://us-assets.i.posthog.com https://*.sentry.io https://*.ingest.sentry.io https://*.ingest.us.sentry.io; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://us.i.posthog.com https://us-assets.i.posthog.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://startly-backend-production.up.railway.app https://us.i.posthog.com https://us-assets.i.posthog.com https://*.sentry.io https://*.ingest.sentry.io https://*.ingest.us.sentry.io; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;" />
     <title>Startly — Make your first sale in 7 days</title>
     <meta name="description" content="Startly helps young entrepreneurs (ages 8–19) go from idea to first sale with an AI mentor, daily tasks, and a money tracker built for beginners." />
     <meta name="keywords" content="young entrepreneurs, teen business, kid business, entrepreneurship for kids, AI mentor, business tracker, first sale, side hustle for teens" />
@@ -24,7 +24,7 @@
     <meta property="og:title" content="Startly — Make your first sale in 7 days" />
     <meta property="og:description" content="Go from idea to first sale with an AI mentor, daily tasks, and a money tracker built for young entrepreneurs." />
     <meta property="og:url" content="https://higurburt.github.io/startly-web/" />
-    <meta property="og:image" content="https://higurburt.github.io/startly-web/og-image.png" />
+    <meta property="og:image" content="https://higurburt.github.io/startly-web/og-image.svg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Startly — Turn your idea into a real business. AI mentor, daily tasks, money tracker." />
@@ -34,86 +34,24 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Startly — Make your first sale in 7 days" />
     <meta name="twitter:description" content="Go from idea to first sale with an AI mentor, daily tasks, and a money tracker built for young entrepreneurs." />
-    <meta name="twitter:image" content="https://higurburt.github.io/startly-web/og-image.png" />
+    <meta name="twitter:image" content="https://higurburt.github.io/startly-web/og-image.svg" />
     <meta name="twitter:image:alt" content="Startly — Turn your idea into a real business." />
-
-    <!-- JSON-LD structured data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Startly",
-      "url": "https://higurburt.github.io/startly-web/",
-      "description": "Startly helps young entrepreneurs go from idea to first sale with an AI mentor, daily tasks, and a money tracker.",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "browserRequirements": "Requires JavaScript. Supports modern Chrome, Safari, Firefox, Edge.",
-      "audience": {
-        "@type": "Audience",
-        "suggestedMinAge": 8,
-        "suggestedMaxAge": 19
-      },
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Free",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "name": "Premium",
-          "price": "4.99",
-          "priceCurrency": "USD",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "4.99",
-            "priceCurrency": "USD",
-            "billingIncrement": 1,
-            "unitCode": "MON"
-          }
-        }
-      ],
-      "creator": {
-        "@type": "Organization",
-        "name": "Startly",
-        "url": "https://higurburt.github.io/startly-web/"
-      }
-    }
-    </script>
 
     <link rel="canonical" href="https://higurburt.github.io/startly-web/" />
     <link rel="icon" type="image/svg+xml" href="/startly-web/favicon.svg" />
+    <link rel="apple-touch-icon" href="/startly-web/favicon.svg" />
+    <link rel="mask-icon" href="/startly-web/favicon.svg" color="#A99AFF" />
     <link rel="manifest" href="/startly-web/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
     />
-    <script type="text/javascript">
-      // SPA GitHub Pages fallback reader — 404.html redirects unknown paths
-      // here with the original path encoded in the query string; we rewrite
-      // history so React Router can take over.
-      (function (l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search
-            .slice(1)
-            .split('&')
-            .map(function (s) { return s.replace(/~and~/g, '&'); })
-            .join('?');
-          window.history.replaceState(
-            null,
-            null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      })(window.location);
-    </script>
-    <script type="module" crossorigin src="/startly-web/assets/index-DrJY-y7E.js"></script>
+    <script type="module" crossorigin src="/startly-web/assets/index-DY1yGa5u.js"></script>
     <link rel="modulepreload" crossorigin href="/startly-web/assets/react-vendor-C8PiwViC.js">
     <link rel="modulepreload" crossorigin href="/startly-web/assets/motion-BT2P-YC9.js">
-    <link rel="stylesheet" crossorigin href="/startly-web/assets/index-CYrEwv-W.css">
+    <link rel="stylesheet" crossorigin href="/startly-web/assets/index-DlSJDcf_.css">
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>

@@ -1,1 +1,0 @@
-import{a as r}from"./react-vendor-C8PiwViC.js";function u(e,o=!0){r.useEffect(()=>{if(!o||typeof e!="function")return;const n=t=>{t.key==="Escape"&&(t.stopPropagation(),e(t))};return document.addEventListener("keydown",n),()=>document.removeEventListener("keydown",n)},[e,o])}export{u};

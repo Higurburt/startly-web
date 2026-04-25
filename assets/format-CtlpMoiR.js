@@ -1,1 +1,0 @@
-function a(n){const t=parseFloat(n)||0;return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",minimumFractionDigits:t%1===0?0:2,maximumFractionDigits:2}).format(t)}function o(n,t=!1){const e=new Date(n),r={month:"short",day:"numeric"};return t&&(r.year="numeric"),e.toLocaleDateString("en-US",r)}export{o as a,a as f};
